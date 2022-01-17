@@ -12,7 +12,7 @@ Today I am going to show you how to renew your Windows Admin Center certificate,
 <br/>
 ### Problem Statement
 The issue we are trying to solve today is that while Windows Admin Center works great on our gateway server that we stood up, but any other endpoint accessing this gateway gets a cert error.
-<!--image-->
+![2022-01-12(1)](assets/images/2022-01-12(1).png)
 <br/>
 <br/>
 <br/>

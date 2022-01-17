@@ -10,35 +10,54 @@ Today I am going to show you how to renew your Windows Admin Center certificate,
 <br/>
 <br/>
 <br/>
+
 ### Problem Statement
 The issue we are trying to solve today is that while Windows Admin Center works great on our gateway server that we stood up, but any other endpoint accessing this gateway gets a cert error.
-![2022-01-12(1)](assets/images/2022-01-12(1).png)
 <br/>
 <br/>
+![2022-01-12(1)](/img/2022-01-12(1).png "Certificate working correctly on local host")
+##### Certificate working correctly on local host
 <br/>
+<br/>
+![2022-01-12(2)](/img/2022-01-12(2).png "Certificate error when connecting to the WAC on another server")
+##### Certificate error when connecting to the WAC on another server
+<br/>
+<br/>
+
 ### Why is this happening?
 This is happening because of the way we set up Windows Admin Center. When installing the application we have the option to select an SSL certificate that we (the administrator) provide. This would be the ideal way to configure Windows Admin Center, but it would require us to use a certificate from either a public certificate authority or create one in an internal certificate authority. Now in my lab environment, I don’t want to pay for a public SSL certificate, and I don’t have an internal CA. But I can still solve this problem by using a self-signed certificate and then distributing it to our endpoints with Group Policy.
 <br/>
 <br/>
 <br/>
+
 ### Self-signed Certificate
 First thing we have to do is verify that we have a valid Windows Admin Center self-signed certificate. Now, it would be pretty obvious if we didn’t, as we would be getting a cert error even on our Windows Admin Center gateway. But let’s check our certificate and verify its validity period.
-<!--image-->
+<br/>
+<br/>
+![2022-01-12(3)](/img/2022-01-12(3).png "Confirm the certificate is valid")
+##### Confirm the certificate is valid
+<br/>
+<br/>
+![2022-01-12(4)](/img/2022-01-12(4).png "Check certlm.msc for the published Windows Admin Center certificate")
+##### Check certlm.msc for the published Windows Admin Center certificate
 <br/>
 <br/>
 <br/>
+
 ### Renewing Windows Admin Center Self-signed Certificate
 If we do need to renew the certificate, it is super simple. We just need to launch the Windows Admin Center installer and select Change. This will give us the option to change out the certificate or create a new one.
 <!--image-->
 <br/>
 <br/>
 <br/>
+
 ### Exporting our Self-signed Certificate
 Now that we have verified our certificate is valid, we need to export it so that we can distribute it to our other endpoints that will be using the Windows Admin Center on our gateway server.
 <!--image-->
 <br/>
 <br/>
 <br/>
+
 ### Creating the Group Policy Object to Distribute the Certificate
 Now we need to create the GPO that will push our certificate to our endpoints. First we will connect to one of our domain controllers and open up the Group Policy Management Editor.
 <!--image-->

@@ -75,6 +75,7 @@ Now we need to create the GPO that will push our certificate to our endpoints. F
 <br/>
 <br/>
 <br/>
+
 ### Verify our Certificate has been Distributed to our Clients
 Now that our GPO is created, we need to verify it has made it to our endpoints. First thing we can do is perform a manual Group Policy update on our client to save some time waiting for a sync. We can then open view our Trust Root Certificate store on the client to verify the Windows Admin Center certificate exists. Lastly, we will launch the Windows Admin Center in the browser and confirm we don’t have any errors.
 <br/>
@@ -120,6 +121,7 @@ Missed a step? I have a full video on this process linked below.
 <br/>
 <br/>
 <br/>
+
 ### References:
 Microsoft - [Updating WAC certificate][updating-wac-certificate]
 <br/>

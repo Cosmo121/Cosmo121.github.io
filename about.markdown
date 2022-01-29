@@ -4,15 +4,10 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+![about](/img/IMG_9764.jpg)
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+<p>I am former, United States Air Force, Veteran of OIF and OEF. Now a Systems Engineer, working with SCCM, Intune, Citrix, and Azure. I love building tools that help users to their jobs better/faster/cheaper. </p>
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Check out my full public bio on LinkedIn [linkedin.com/in/mhartman121/](https://www.linkedin.com/in/mhartman121/)
 
-
-[jekyll-organization]: https://github.com/jekyll
+In the words of Tim Gerla, *Be well, do good work, and automate everything!*

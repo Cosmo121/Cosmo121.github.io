@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Updating and distributing a Windows Admin Center certificate"
+title:  "Creating and Distributing a Self-Signed Windows Admin Center certificate"
 date:   2022-01-12 22:26:07 -0500
 categories: Windows Admin Center; Certificates
 ---

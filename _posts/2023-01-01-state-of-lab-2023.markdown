@@ -1,0 +1,68 @@
+---
+layout: post
+title:  "State of the Lab - 2023"
+date:   2023-01-01 00:01:00 -0500
+categories: selfhosting; homelab; xcp-ng
+---
+
+Taking some inspiration from the more popular self-hosting YouTubers, I am going to start a yearly round-up of the current state of my homelab. So here we go, State of the Lab - 2023 edition...
+
+### Networking
+My home network mostly consists of Unifi devices. That is; a Unifi Dream Machine, a USW-Lite 16 port POE switch, a USW Flex Mini, a US-8 8 Port POE switch, and a U6-Mesh AP.
+![2022-12-27][network1]
+
+This has been a great setup for me. Unifi is a great solution for homes that want easy management but the ability to configure advanced features. I have not ran into any of the software/firmware issues and all my products were bought before the supply chain issues.
+
+### Compute
+The main portion of my compute are two HPE ProLiant MicroServer Gen10 Plus. I have the Xeon chip versions with the optional ILO out-of-band-management cards. These two are in an XCP-NG pool.
+![2022-12-27][compute1]
+
+## Storage
+For storage I am using a Synology unit. It is the DS720+ with the DX517 expansion unit. That gives me a total of seven drive bays and two M.2 slots for cache SSDs.
+
+![2022-12-27][storage1]
+
+Using Synology's SHR for redundancy, I can use drives of different sizes. The drives are broken into two storage pools. One providing storage for the Synology OS and the other providing iSCSI LUNs for the XCP-NG cluster.
+
+![2022-12-27][storage2]
+
+## Projects
+
+### Portainer
+I am running Docker with Portainer on the XCP-NG pool. I currently have [Muse][muse-github], a self-hosted Discord bot, and the monitoring tool [Uptime-Kuma][kuma-github].
+
+![2022-12-27][portainer1]
+
+### Backups
+Most of my backup tasks are handled by a self-hosted Veeam instance. I am using their community edition, running on Server 2022, and backing up to my Synology. It currently backs up a few servers and does file level backups on one other desktop. These all run on a schedule and I have never had any issues.
+
+![2022-12-27][veeam1]
+
+### Patch Management
+This is something I hadn't set up before, but has been a pretty slick addition. I am using ManageEngine's Patch Manager Plus to report on vulnerabilities within my homelab, and also push out patches. Here is one expample of how the dashboard looks:
+
+![2022-12-27][pmp1]
+
+### Identity Management
+I have had an on-prem Active Directory domain set up for a while. I mainly use this for testing solutions in a lab environment. I also use it for authentication for a few apps (like ManageEngine above). New to my lab is Microsoft's Azure AD. I am using Azure AD Connect to sync my on-premise directory to Azure AD. This has let me explore and test a whole lot more with Microsoft's cloud offerings. I also explored Synology's new C2 Identity Service, but wasn't too impressed. Perhaps I will explore it later down the road.
+
+![2022-12-27][im1]
+
+### Conclusion
+I think that about wraps it up! I have plenty of ideas left to try out in 2023, but feel free to make suggestions at my contact info below.
+
+
+[//]: # Pictures below
+[network1]: /img/2022-12-27(1).png "Network Diagram"
+[compute1]: /img/2022-12-27(2).png "XCP-NG"
+[storage1]: /img/2022-12-27(3).png "Synology"
+[storage2]: /img/2022-12-27(4).png "Synology"
+[portainer1]: /img/2022-12-27(5).png "Portainer"
+[veeam1]: /img/2022-12-27(6).png "Veeam"
+[pmp1]: /img/2022-12-27(7).png "ManageEngine PMP"
+[im1]: /img/2022-12-27(8).png "Azure AD Connect"
+
+
+[//]: # Links below
+[muse-github]: https://github.com/codetheweb/muse
+[kuma-github]: https://github.com/louislam/uptime-kuma

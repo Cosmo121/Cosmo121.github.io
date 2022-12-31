@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "State of the Lab - 2023"
-date:   2022-12-31 23:55:00 -0500
+date:   2023-01-01 00:01:00 -0500
 categories: selfhosting; homelab; xcp-ng
 ---
 

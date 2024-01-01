@@ -1,0 +1,52 @@
+---
+layout: post
+title:  "State of the Lab - 2024"
+date:   2024-01-01 00:00:01 -0500
+categories: selfhosting; homelab; xcp-ng
+---
+
+[Since my first post of 2023][sol2023], documenting what I all have running in my lab , I suppose I should do one at the start of 2024. So here we go again, State of the Lab - 2024 edition...
+
+### Networking
+No changes made here. My Unifi equipment has held steady and I have just been doing firmware updates. Perhaps Ubiquiti will grace us with an affordable Wifi6E access point in 2024, preferably in the form factor of the U6-Mesh.
+
+### Compute
+No changes here either. My two HPE ProLiant MicroServer's (Gen 10 Plus) have been going strong. I have been updating XCP-NG and XOA as updates roll out. Perhaps the only changes I will make in 2024 here, is to add my micro Dell OptiPlex 7050 as a third host.
+
+### Storage
+While my storage infrastructure has not changes, I have swapped out a few disks in both of my Synology units. My DS720+ had one of its original drives start to fail. I replaced the 4 TB Seagate IronWolf drive with a certified used 10 TB Seagate Exos. The second drive in this array is still one of the original 4 TB IronWolf's, so I am guessing I will have to replace it during 2024. However, until I change out this second drive, my available storage on my DS720+ unit remains at 4 TB, due to it being just RAID 1.
+
+The second drive change I made was in my Synology DX517 expansion unit. Surprisingly, my DX517 still holds my oldest drive. Just as I said above, I'm guessing this 4 TB drive (which will hit 20k hours in less than a month) will need to be replaced in 2024. The other drives in this storage pool are not far behind, expect for one newly added 10 TB Seagate Exos, that replaced a 20k hour 4 TB drive. Since this pool can only take one drive failure, I am starting to stager the drive replacements. With the hybrid raid setup in this second pool, it currently sits at just under 21 TB of useable space.
+
+![2023-12-27][storage]
+
+### Projects
+#### Portainer
+Portainer is still running, and I love how easy it makes running and managing various containers. I did, however, make some changes to my infrastructure. I moved it over to a new Rocky Linux VM that is domain joined to my Windows Active Directory tenant. This gives me the ability to use Active Directory security groups with Active Directory accounts to manage the server, instead of just using local accounts with static passwords.
+
+#### Backups
+Veeam is still my go-to here. I love their community edition and have just been keeping it up to date with their latest v12. If you have a local storage repository, I highly recommend getting Veeam set up.
+
+#### Patch Management
+I am still using ManageEngine's Patch Manager Plus to scan for vulnerabilities and deploy Windows updates to my various Windows servers. The only changes I have made here is I am running their email alerting through SendGrid. Using SendGrid's SMTP API has been great and is so much easier than hosting it myself.
+
+#### Identity Management
+In 2022, one of my big projects was to set up a Microsoft tenant, complete with Azure AD Connect (now called Microsoft Entra ID) and then in 2023, [adding MFA][mfa2023]. The last change I made here was [introducing LAPS][laps2023], which has been running just fine and rotating my local administrative credentials on my Windows servers. Also in 2022, I also [explored Synology's C2 Identity Service][c2id2023]. I have not seen much movement on Synology's side here, as far as adding features goes, so I have not explored it any further.
+
+#### Monitoring
+This is sort of a new one for me. In 2022 and 2023, I had been using Uptime Kuma on and off. While I do believe it is a great tool and it creates a super simple up/down splash page, I wanted to venture into something a bit more complex and enterprise'ish. So, a couple months back I stood up a Zabbix virtual appliance. I am still fiddling with it and getting workloads added, but it has been a great learning experience. My experience with monitoring tools at this level has been SolarWinds, Dynatrace and New Relic, so it is always good to have some experience with another product. As I expand my monitoring to various VMs and workloads, I will be sure to create a post.
+
+![2023-12-27][monitoring]
+
+## Conclusion
+I think that about wraps it up. I haven't made any huge changes in 2023, and I expect 2024 to be somewhat similar. But who knows, with a homelab there is always the urge to just tear everything down and built it back again...
+
+[//]: # Pictures below
+[monitoring]: /img/2023-12-27(1).png "Zabbix"
+[storage]: /img/2023-12-27(2).png "Disks"
+
+[//]: # Links below
+[sol2023]: https://thepc.co/selfhosting;/homelab;/xcp-ng/2023/01/01/state-of-lab-2023.html
+[mfa2023]: https://thepc.co/azure/ad;/mfa;/active/directory/2023/07/23/number-matching-mfa.html
+[laps2023]: https://thepc.co/active/directory;/laps;/windows/server/2023/09/07/microsoft-laps.html
+[c2id2023]: https://thepc.co/synology;/synology/c2;/active/directory/2022/11/14/c2-identity-part-1.html

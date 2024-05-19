@@ -16,10 +16,10 @@ In late 2023, [Microsoft released Loop to the general public][loopgoesga]. It is
 By default, Loop has four columns (To do, On Hold, In progress and Done), but for my personal setup I like to hide the On Hold column. This is the simplest Kanban board I have ever used, and I like it especially for that reason.
 
 ### Get (in the) Loop
-More Info: https://www.microsoft.com/en-us/microsoft-loop
-Loop for Home: https://www.microsoft.com/en-us/microsoft-365/buy/compare-all-microsoft-365-products
-Loop for Business: https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products
-Use Copilot in Loop: https://copilot.cloud.microsoft/en-US/copilot-loop
+More Info: [https://www.microsoft.com/en-us/microsoft-loop][moreinfo]
+Loop for Home: [https://www.microsoft.com/en-us/microsoft-365/buy/compare-all-microsoft-365-products]
+Loop for Business: [https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products]
+Use Copilot in Loop: [https://copilot.cloud.microsoft/en-US/copilot-loop]
 
 [//]: # Pictures below
 [kanban_example]: /img/2024-05-18(1).png "Kanban in Loop"
@@ -28,3 +28,7 @@ Use Copilot in Loop: https://copilot.cloud.microsoft/en-US/copilot-loop
 [whatiskanban]: https://www.atlassian.com/agile/kanban/boards
 [loopgoesga]: https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-loop-built-for-the-new-way-of-work-generally-available/ba-p/3982247
 [jirabought]: https://www.forbes.com/sites/alexkonrad/2017/01/09/atlassian-acquires-popular-team-productivity-app-trello-for-425-million/?sh=4ab4b4bf7c76
+[moreinfo]: https://www.microsoft.com/en-us/microsoft-loop
+[loopforhome] https://www.microsoft.com/en-us/microsoft-365/buy/compare-all-microsoft-365-products
+[loopforbusiness]: https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products
+[usecopilotinloop]: https://copilot.cloud.microsoft/en-US/copilot-loop

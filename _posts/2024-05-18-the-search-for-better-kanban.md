@@ -17,9 +17,12 @@ By default, Loop has four columns (To do, On Hold, In progress and Done), but fo
 
 ### Get (in the) Loop
 More Info: [https://www.microsoft.com/en-us/microsoft-loop][moreinfo]
+
 Loop for Home: [https://www.microsoft.com/en-us/microsoft-365/buy/compare-all-microsoft-365-products][loopforhome]
+
 Loop for Business: [https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products][loopforbusiness]
-Use Copilot in Loop: [https://copilot.cloud.microsoft/en-US/copilot-loop][usecopilotinloop]
+
+Copilot in Loop: [https://copilot.cloud.microsoft/en-US/copilot-loop][usecopilotinloop]
 
 [//]: # Pictures below
 [kanban_example]: /img/2024-05-18(1).png "Kanban in Loop"
@@ -29,6 +32,6 @@ Use Copilot in Loop: [https://copilot.cloud.microsoft/en-US/copilot-loop][usecop
 [loopgoesga]: https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-loop-built-for-the-new-way-of-work-generally-available/ba-p/3982247
 [jirabought]: https://www.forbes.com/sites/alexkonrad/2017/01/09/atlassian-acquires-popular-team-productivity-app-trello-for-425-million/?sh=4ab4b4bf7c76
 [moreinfo]: https://www.microsoft.com/en-us/microsoft-loop
-[loopforhome] https://www.microsoft.com/en-us/microsoft-365/buy/compare-all-microsoft-365-products
+[loopforhome]: https://www.microsoft.com/en-us/microsoft-365/buy/compare-all-microsoft-365-products
 [loopforbusiness]: https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products
 [usecopilotinloop]: https://copilot.cloud.microsoft/en-US/copilot-loop

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Search for a Better Kanban Board"
-date:   2024-05-18 00:00:01 -0500
+date:   2024-05-18 00:00:02 -0500
 categories: selfhosting; homelab; kanban
 ---
 

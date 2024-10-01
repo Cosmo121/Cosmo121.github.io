@@ -18,22 +18,26 @@ DFL of 2016 or higher.
 
 My devices are domain joined so I will be proceeding with the steps for that scenario.
 
-1) First, I made sure my account was in the schema admins group.
+1) First, I made sure my account was in the schema admins group. This built-in AD group is domain\Schema Admins. If you just added your admin account to that group, you may need to log off and back on again, before running the below PowerShell command.
 
-2) Then I can run the schema extensions command from one of my 2019 or 2022 domain controllers
+2) Then I can run the schema extensions PowerShell command from one of my 2019 or 2022 domain controllers
 
 ```powershell
 Update-LapsADSchema -Verbose
 ```
 
-3) I also created a test OU for this. I then created a LAPS GPO and applied it to the OU (make sure you move at least one test VM to that OU)
+3) I also created a test OU for this. I then created a LAPS GPO and applied it to the OU (make sure you move at least one test VM to that OU). LAPS configuration can be found at Computer Configuration -> Policies -> Administrative Templates -> System -> LAPS.
 
 ![2023-09-07(1).png][LAPS1]
 
-4) Lastly, I had to grant permission for LAPS to reset the local passwords. In the PowerShell line below, "Laps Test" is the name of my test OU.
+4) Lastly, I had to grant permission for LAPS to reset the local passwords. In the PowerShell line below, "Laps Test" is the name of my test OU. This field accepts either the name or distinguishedName. Both examples below:
 
 ```powershell
 Set-LapsADComputerSelfPermission -Identity "Laps Test"
+```
+
+```powershell
+Set-LapsADComputerSelfPermission -Identity "OU=Laps Test,DC=your,DC=domain"
 ```
 
 # Testing and Verification
@@ -51,7 +55,7 @@ And the output I got
 
 I can then test that password by logging in as the local admin account.
 
-If you run into any issues, take a look at Event Viewer
+If you run into any issues, take a look at Event Viewer on the target workstation (Applications and Services Logs -> Microsoft -> Windows -> LAPS)
 
 ![2023-09-07(3).png][LAPS3]
 

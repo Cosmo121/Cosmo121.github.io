@@ -60,7 +60,7 @@ If you run into any issues, take a look at Event Viewer on the target workstatio
 ![2023-09-07(3).png][LAPS3]
 
 <!--URL Block-->
-[sp]: https://learn.microsoft.com/en-us/windows-server/identity/laps/laps-overview#windows-laps-supported-platforms-and-azure-ad-laps-preview-status
+[sp]: https://learn.microsoft.com/en-us/windows-server/identity/laps/laps-overview#windows-laps-supported-platforms
 
 <!--Picture Block-->
 [LAPS1]: /img/2023-09-07(1).png "GPO"

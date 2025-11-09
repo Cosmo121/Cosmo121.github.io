@@ -5,7 +5,7 @@ date:   2025-11-08 00:00:02 -0500
 categories: Action1; Patch Management; MDM
 ---
 
-I'm currently testing a bunch of Windows server and workstation automation tools. All of these have at least some component of self-hosting, and can help with endpoint discovery, patching, hardware/software asset management and so much more. Thist week, I came across [Action1][action1mainpage].
+I'm currently testing a bunch of Windows server and workstation automation tools. All of these have at least some component of self-hosting, and can help with endpoint discovery, patching, hardware/software asset management and so much more. This week, I came across [Action1][action1mainpage].
 
 ### Sign-up and Setup
 Action1 has a pretty generous free tier; you can manage up to 200 endpoints for free. Additionally, the sign up process, downloads and documentation are free and open, no sales demos or calls needed. Check out the full details of the free tier here: [https://www.action1.com/free-edition/][freeurl]

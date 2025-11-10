@@ -78,7 +78,7 @@ Now let's push a third-party application out. Here I am installing 7-Zip on a Wi
 Just like with the Edge update, the third-party app push was simple and quick.
 
 ## Wrap-up
-In just a few hours I was able to set up Action1 and its automated agent deployment tool. I really like the modern user interface of Action1's dashboard. It seems to have plenty of items in its toolbox and some decent reporting capabilities. I also like the option of using the Action1 deployer to ensure that any newly added domain devices will get the agent installed. This could be a really great add for SMBs who don't want to dive into another MDM tools licensing cost(Intune, JAMF, etc).
+In just a few hours I was able to set up Action1 and its automated agent deployment tool. I really like the modern user interface of Action1's dashboard. It seems to have plenty of items in its toolbox and some decent reporting capabilities. I also like the option of using the Action1 deployer to ensure that any newly added domain devices will get the agent installed. This could be a really great add for SMBs who don't want to dive into another MDM tool's licensing cost (Intune, JAMF, etc).
 
 
 [//]: # Links below

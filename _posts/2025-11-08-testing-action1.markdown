@@ -5,12 +5,12 @@ date:   2025-11-08 00:00:02 -0500
 categories: Action1; Patch Management; MDM
 ---
 
-I'm currently testing a bunch of Windows server and workstation automation tools. All of these have at least some component of self-hosting, and can help with endpoint discovery, patching, hardware/software asset management and so much more. This week, I came across [Action1][action1mainpage].
+This week I dived into testing some endpoint automation tools. These can be invaluable tools that SMBs can use reduce their endpoint risks and start to get a grasp on their fleet of servers, workstations, and all installed software. In simple terms, you install a lightweight agent on each of your endpoints that then reports back to Action1's cloud dashboard. In this dashboard, you can schedule and push out OS updates, third-party application patches, run reports of vulnerabilities, and set up alerts on high-risk devices. Some of these tools even have the capability to do screensharing for help-desk sessions. All of the ones I am testing have at least some component of self-hosting, and all or some of the features mentioned above. For my first test, I am using [Action1][action1mainpage]. Action1 touts itself as a replacement for WSUS and a great tool for "work-from-anywhere workplaces with no VPN". They are SOC 2 Type II certified and highlight some large customers like ebay, Coca-Cola, and Nestle. Their co-founder, Mike Walters, is also the co-founder of the data-security tool Netwrix. 
 
 ### Sign-up and Setup
 Action1 has a pretty generous free tier; you can manage up to 200 endpoints for free. Additionally, the sign up process, downloads and documentation are free and open, no sales demos or calls needed. Check out the full details of the free tier here: [https://www.action1.com/free-edition/][freeurl]
 
-After creating an account, you are brought to an empty dashboard. Simply download and install the relevant agent for your OS (Windows or MacOS) and you will start seeing your dashboard populate with data. I have to say, it is quite a nice layout:
+After creating an account, you are brought to an empty dashboard. Simply download and install the relevant agent for your OS (Windows or MacOS) and you will start seeing your dashboard populate with data. Note that Linux support is on their roadmap and coming soon. I have to say, it is quite a nice layout:
 
 ![act1_1][act1_1]
 

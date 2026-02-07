@@ -4,8 +4,6 @@ title: Privacy Policy - HapticNerd
 permalink: /privacy/
 ---
 
-![privacy]
-
 <p>Privacy Policy for HapticNerd</p>
 
 Effective Date: February 7, 2026
